@@ -50,22 +50,20 @@
    </article>
    <script>
      //Create global variables for later use.
-     i = 1;
-     listItem = '';
-     //Function to change our list elements to the value user entered.
-     function processInput() {
-       if (i <= 5) {
-         listItem = 'item' + (i);
-         document.getElementById(listItem).innerHTML = document.getElementById('toolBox').value;
-         document.getElementById('toolBox').value = '';
-         if (i == 5) {
-           document.getElementById('resultsExpl').innerHTML = 'Thanks for your suggestions.';
+     i = 1; //Create the global variable i.
+     listItem = ''; //Create an empty string called 'listItem'
+     function processInput() { //Function to change our list elements to the value user entered.
+       if (i <= 5) { //An if statement that'll run only if i is less than or equal to five.
+         listItem = 'item' + (i); //Make listItem equal to the string 'item' plus whatever value i is currently. (item + (1))
+         document.getElementById(listItem).innerHTML = document.getElementById('toolBox').value; //Change the innerHTML of the element with the 'listItem' id to the value of what the user entered. 
+         document.getElementById('toolBox').value = ''; //Empty the element with the id of 'toolBox' for convenience sake.
+         if (i == 5) { //Another if state to check if i is equal to five
+           document.getElementById('resultsExpl').innerHTML = 'Thanks for your suggestions.'; //Change the innerHTML of the element with the id 'resultsExpl' to 'Thanks for your suggestions.'
          }
-         i++;
+         i++; // Increment i by one so we don't get stuck in an infinite loop.
        }
      }
-     //Add an event listener to push the user input into the list.
-     document.getElementById('button').addEventListener('click', processInput, false);
+     document.getElementById('button').addEventListener('click', processInput, false); //Add an event listener to push the user input into the list.
    </script>
 </body>
 </html>
