@@ -38,20 +38,18 @@
       </div>
    </article>
    <script>
-       //Create an array for our city names.
-       places = ['Grovetown', 'Harlem', 'Appling', 'Augusta', 'Evans'];
-       //Function to populate the list within the div with the id 'results'.
-       function processPlaces() {
-           for (var i=0; i < 5; i++) {
-               var listItem = 'item' + (i + 1);
-               document.getElementById(listItem).innerHTML = places[i];
+       places = ['Grovetown', 'Harlem', 'Appling', 'Augusta', 'Evans']; //Create an array for our city names.
+       function processPlaces() { //Function to populate the list within the div with the id 'results'.
+           for (var i=0; i < 5; i++) { //Use a for loop to iterate through the array places.
+               var listItem = 'item' + (i + 1); //Create a variable to hold the id of a html element.
+               document.getElementById(listItem).innerHTML = places[i]; //Replace the innerHTML of the element with the id of listItem with whatever is in index i of places.
            }
        }
        //Run processPlaces once the page finishes loading.
-       if (window.addEventListener) {
-           window.addEventListener('load', processPlaces, false);
-       } else if (window.attachEvent) {
-           window.attachEvent('onload', processPlaces);
+       if (window.addEventListener) { //Check to see if we have addEventListener (Newer browsers)
+           window.addEventListener('load', processPlaces, false); //Use addEventListener to run processPlaces when the webpage finishes loading.
+       } else if (window.attachEvent) { //Check to see if we have attachEvent. (Internet explorer)
+           window.attachEvent('onload', processPlaces); //Use attachEvent to run processPlaces when the webpage loads.
        }
    </script>
 </body>
