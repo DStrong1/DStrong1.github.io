@@ -94,6 +94,9 @@ aside h3 {
   font-size: 105%;
   padding-bottom: .25em;
 }
+aside h2 {
+  color: #800000;
+}
 aside img {
   padding-bottom: 1em;
 }
