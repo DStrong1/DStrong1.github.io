@@ -1,0 +1,26 @@
+@media (max-width: 767px) {
+    .slicknav_menu {
+        display:block;
+    }
+    #nav_menu {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) {
+    .slicknav_menu {
+        display:block;
+    }
+    #nav_menu {
+        display:none;
+    }
+}
+
+@media (min-width: 1200px) {
+    .slicknav_menu {
+        display:none;
+    }
+    #nav_menu {
+        display:block;
+    }
+}
