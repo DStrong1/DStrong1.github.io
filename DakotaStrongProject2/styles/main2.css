@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Custom font */
+@font-face {
+  font-family: myFirstFont;
+  src: url(sansation_light.woff);
+}
+@keyframes rainbow {
+  0% {color: red;}
+  14.29% {color: orange;}
+  28.58% {color: yellow;}
+  42.87% {color: green;}
+  57.16% {color: blue;}
+  71.45% {color: indigo;}
+  85.74% {color: violet;}
+  100% {color: red;}
+}
+#rainbowText {
+  color: red;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+  margin-right: auto;
+  border-width: .1875em;
+  border-style: solid;
+  border-color: black;
+  background-color: #EEFFD1;
+  width: 95%;
+  height: auto;
+}
+
+/* the styles for the html */
+html {
+  background-color: #EEFFD1;
+  height: 95%;
+}
+
+/* the styles for the header */
+header {
+  border-bottom-width: .1875em;
+  border-bottom-style: solid;
+  border-bottom-color: black;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  background: linear-gradient(30deg, #EEFFD1 0%, #E4E4E4 30%, #E4E4E4 50%, #E4E4E4 80%, #EEFFD1 100%);
+}
+header img {
+	float: left;
+
+}
+header h2 {
+  font-size: 170%;
+  color: burlywood;
+  padding: 0 0 0 2.9em; 
+}
+header h3 {
+  font-size: 130%;
+  font-style: italic;
+  padding: 0 0 0 3.75em;
+}
+header::after {
+  clear: both;
+}
+
+/* the styles for the section */
+section {
+  width: 25%;
+  height: 100%;
+  float: left;
+  padding: 0 1.25em 1.25em 1.25em;
+  text-align: center;
+  border-right: .125em solid black;
+}
+section p {
+  padding-bottom: 1em;
+}
+section ul {
+  padding-bottom: 1em;
+  padding-left: 1.25em;
+}
+section img {
+  width: 7em;
+  height: 10em;
+}
+
+/* the styles for the aside */
+aside {
+  float: right;
+  width: 65.75%;
+  height: 100%;
+  padding-left: 1.25em;
+  padding-bottom: 1.25em;
+}
+aside h3 {
+  font-size: 110%;
+  color: blue;
+  text-decoration: underline;
+  clear: both;
+  padding-bottom: .25em;
+}
+aside img {
+  float:left;
+  border-radius: 10%;
+  padding: 0 .7em 1em 0;
+}
+aside .noFloat {
+  float: none;
+  border: .1em solid black;
+  padding: 0;
+  margin: 0;
+}
+aside p {
+  padding: 0 1em 0 0;
+}
+aside ul {
+  padding: 1em 0 1em 29%;
+}
+aside table, th, td {
+  border: 1px solid black;
+}
+
+/* the styles for the main */
+main {
+	clear: left;
+  margin: .8em;
+  height: 68.7%;
+  overflow:auto;
+}
+main h2 {
+  font-size: 130%;
+  color: blue;
+  padding-top: .5em;
+  padding-bottom:.25em;
+}
+
+/* styles for any links */
+a:hover {
+  font-style: italic;
+}
+a:focus {
+  font-style: italic;
+}
+
+/* the styles for the footer */
+footer {
+  clear: both;
+  position:absolute;
+  bottom:0;
+  width:100%;
+  height: auto;
+}
+footer p {
+  color: black;
+  text-align: center;
+  font-size: 100%;
+  padding: 1em 0 1em 0;
+  background-color: #E4E4E4;
+}
+
+/* tagName styles */
+h1 {
+  font-size: 150%;
+  padding-top: .5em;
+  padding-bottom: .25em;
+  margin: 0;
+}
+
+/* #nav_menu styles */
+#nav_menu {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+#nav_menu li {
+  float: left;
+  width: 33.2%;
+  border-left: .1em solid black;
+  border-bottom: .1em solid black;
+}
+#nav_menu li a {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 1em 0 1em 0;
+  text-decoration-line: none;
+  background-color: burlywood;
+  color: white;
+  font-weight: bold;
+}
+#nav_menu li .current {
+  color: purple;
+}
+#nav_menu li ul {
+  display: none;
+}
+#nav_menu li ul li {
+  clear: both;
+}
+#nav_menu li:hover > ul {
+  list-style-type: none;
+  display: block;
+  position: absolute;
+}
+#nav_menu::after {
+  clear: both;
+  display:block;
+}

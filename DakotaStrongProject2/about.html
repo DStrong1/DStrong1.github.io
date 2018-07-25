@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+<head>
+	<meta charset="utf-8">
+	<title>Project 1</title>
+	<link rel="shortcut icon" href="images/icons8-soil-filled-50.png">
+  <link rel="stylesheet" type  = 'text/css' href="styles/normalize.css">
+  <link rel='stylesheet' href = 'styles/slicknav.css'>
+  <link rel="stylesheet" type = 'text/css' href="styles/main3.css">
+  <link rel='stylesheet' href = 'styles/responsive.css'>
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+  <script src='js/jquery.slicknav.min.js'></script>
+  <script src='js/fadeIn.js'></script>
+  <script src='js/resetButton.js'></script>
+</head>
+
+<body background='images/dot.png'>
+    <script>
+            $('body').css('display', 'none');
+    </script>
+	<header>
+    
+    <img src = "" alt = "" height = "80">
+    <h2>Midterm Project</h2>
+    <h3>The about page!</h3>
+    
+    </header>
+    
+
+    <ul id='nav_menu'>
+        <li><a href='index.html'>Home</a></li>
+        <li><a href='document.html'>Document</a></li>
+        <li>
+            <a href='about.html' class='current'>About</a>
+            <!--
+            <ul>
+                <li><a href=''>Our History</a></li>
+                <li><a href=''>Board of Directors</a></li>
+                <li><a href=''>Past Speakers</a></li>
+                <li><a href=''>Contact Information</a></li>
+            </ul>
+        -->
+        </li>
+    </ul>
+
+	<main>
+        
+        <section>
+            <h2>Get Around</h2>
+            
+            <p>Below are two images. The one with the main signboard
+                takes you to the main page of the website. It includes
+                examples of what you have learned over the past
+                few weeks. The other takes you to the about page, which
+                just includes some information about the website and an 
+                image map.
+            </p>
+            <a   href='index.html'><img src='images/charles-deluvio-481837-unsplash.jpg' alt='a door mat on concrete floor'
+                    title='Home page'></a>
+            <a href='document.html'><img src='images/aaron-huber-615980-unsplash.jpg' alt='a "main" sign on a rainy day'
+                    title='Main page'></a>
+        </section>
+
+        <aside>
+            <h2>About</h2>
+            <p>Welcome to the about page! Enjoy the cat video along with the current
+                date and time! Feel free to leave a comment about the website!
+            </p>
+            <iframe width='75%' height='75%' src="https://www.youtube.com/embed/hY7m5jjJ9mM" 
+            frameborder="0" allow="autoplay; encrypted-media" 
+            allowfullscreen></iframe>
+            <br>
+            <br>
+            <p id='time'></p>
+            <br>
+            <div id='cForm'>
+                <h3>Leave a comment!</h3>
+                <form action='index.html'>
+                    First Name:<br>
+                    <input type='text' name='firstname'>
+                    <br>
+                    Last Name:<br>
+                    <input type='text' name='lastname'>
+                    <br>
+                    Email Address:<br>
+                    <input type='text' name='emailaddress'>
+                    <br>
+                    Comment:<br>
+                    <input type='text' name='comment' style="width:75%; height:100%;">
+                    <br><br>
+                    <button type='reset' value='Reset'>Reset</button>
+                    <button type='submit' value='Submit'>Submit</button>
+                </form>
+            </div>
+            <br>
+            <div id='contForm'>
+                <h3>Contact Us!</h3>
+                <form action=''>
+                    First Name:<br>
+                    <input type='text' name='firstname'>
+                    <br>
+                    Last Name:<br>
+                    <input type='text' name='lastname'>
+                    <br>
+                    Email Address:<br>
+                    <input type='text' name='emailaddress'>
+                    <br>
+                    Concerns:<br>
+                    <input type='text' name='comment' style="width:75%; height:100%;">
+                    <br><br>
+                    <button type='reset' value='Reset'>Reset</button>
+                    <button type='submit' value='Submit'>Submit</button>
+                </form>
+        </aside>
+	</main> 
+	<footer>
+  
+    <p>&copy; 2018 Augusta, GA</p>
+    
+    </footer>
+    <script>
+        $(function() {
+            $('#nav_menu').slicknav();
+        });
+    </script>
+    <script src = 'js/date.js'></script>
+</body>
+</html>
