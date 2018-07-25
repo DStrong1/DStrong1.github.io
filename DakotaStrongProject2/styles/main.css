@@ -138,6 +138,12 @@ h1 {
   margin: 0;
 }
 
+/* ID styles */
+#laptop {
+  height: 25%;
+  width: 25%;
+}
+
 /* #nav_menu styles */
 #nav_menu {
   position: relative;

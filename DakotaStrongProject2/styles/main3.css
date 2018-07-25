@@ -145,6 +145,12 @@ h1 {
   margin: 0;
 }
 
+/* ID styles */
+#comment, #concerns {
+  width: 75%;
+  height: 100%;
+}
+
 /* #nav_menu styles */
 #nav_menu {
   position: relative;
